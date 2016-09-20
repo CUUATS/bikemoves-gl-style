@@ -71,7 +71,11 @@
         "mapbox": {
             "url": "mapbox://mapbox.mapbox-streets-v7",
             "type": "vector"
-        }
+        },
+        "bikemoves": {
+  				  "type": "vector",
+  				  "url": "http://tileserver.bikemoves.me/data/bikemoves.json"
+  			}
     },
     "sprite": "mapbox://sprites/mapbox/bright-v9",
     "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
@@ -2895,6 +2899,122 @@
                 }
             },
             "source-layer": "admin"
+        },
+        {
+            "interactive": false,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "type": "line",
+            "source": "bikemoves",
+            "id": "bikemoves_sidewalk",
+            "paint": {
+                "line-color": "#aaaaaa",
+                "line-width": {
+                    "base": 1.4,
+                    "stops": [
+                        [13, 0.25],
+                        [20, 8]
+                    ]
+                }
+            },
+            "source-layer": "sidewalk"
+        },
+        {
+            "interactive": true,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "type": "line",
+            "source": "bikemoves",
+            "id": "bikemoves_bike_path",
+            "paint": {
+              "line-color": {
+                  "property": "path_type",
+                  "type": "categorical",
+                  "stops": [
+                      ["Bike Route", "#ffff66"],
+                      ["Shared Lane Markings (sharrows)", "#ffff66"],
+                      ["Bike Lanes (on-street)", "#ff8080"],
+                      ["Bike Path", "#66b3ff"],
+                      ["UIUC Bike Path", "#66b3ff"],
+                      ["Divided Shared-Use Path", "#66b3ff"],
+                      ["Shared-Use Path (sidepath)", "#66b3ff"],
+                      ["Shared-Use Path (off-street)", "#66b3ff"]
+                  ]
+              },
+              "line-width": {
+                  "base": 1.4,
+                    "stops": [
+                        [6, 0.5],
+                        [20, 30]
+                    ]
+                }
+            },
+            "source-layer": "bike_path"
+        },
+        {
+            "interactive": true,
+            "type": "symbol",
+            "source": "bikemoves",
+            "id": "bikemoves_bike_repair_retail",
+            "layout": {
+                "icon-image": "bicycle-15",
+                "text-font": [
+                    "Open Sans Semibold",
+                    "Arial Unicode MS Bold"
+                ],
+                "text-field": "{name}",
+                "text-max-width": 9,
+                "text-padding": 2,
+                "text-offset": [0, 0.6],
+                "text-anchor": "top",
+                "text-size": 12
+            },
+            "paint": {
+                "text-color": "#002db3",
+                "text-halo-color": "#ffffff",
+                "text-halo-width": 1,
+                "text-halo-blur": 0.5
+            },
+            "source-layer": "bike_repair_retail"
+        },
+        {
+            "interactive": false,
+            "type": "circle",
+            "source": "bikemoves",
+            "id": "bikemoves_bike_rack_halo",
+            "paint": {
+                  "circle-color": "#ffffff",
+                  "circle-blur": 0.25,
+                  "circle-radius": {
+                    "base": 1.4,
+                    "stops": [
+                        [13, 6],
+                        [20, 18]
+                    ]
+                }
+            },
+            "source-layer": "bike_rack"
+        },
+        {
+            "interactive": true,
+            "type": "circle",
+            "source": "bikemoves",
+            "id": "bikemoves_bike_rack",
+            "paint": {
+                "circle-color": "#e63900",
+                "circle-radius": {
+                    "base": 1.4,
+                    "stops": [
+                        [13, 3],
+                        [20, 15]
+                    ]
+                }
+            },
+            "source-layer": "bike_rack"
         },
         {
             "interactive": true,
