@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-sprites": "spritezero sprites/sprite sprites/_svg/ && spritezero --retina sprites/sprite@2x sprites/_svg/"
+    "build-sprites": "spritezero sprites/sprite sprites/_svg/ && spritezero --retina sprites/sprite@2x sprites/_svg/",
+    "build-glyphs": "node ./build_glyphs.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
   "homepage": "https://github.com/CUUATS/bikemoves-gl-style#readme",
   "dependencies": {
     "fontmachine": "^0.1.2",
+    "fs-extra": "^0.30.0",
     "spritezero-cli": "^1.2.0"
   }
 }
