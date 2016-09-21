@@ -1,0 +1,30 @@
+{
+  "name": "bikemoves-gl-style",
+  "version": "1.0.0",
+  "description": "Mapbox GL style for BikeMoves Illinois",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sprites": "spritezero sprites/sprite sprites/_svg/ && spritezero --retina sprites/sprite@2x sprites/_svg/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CUUATS/bikemoves-gl-style.git"
+  },
+  "keywords": [
+    "BikeMoves",
+    "bicycle",
+    "map",
+    "style"
+  ],
+  "author": "Champaign County Regional Planning Commission",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CUUATS/bikemoves-gl-style/issues"
+  },
+  "homepage": "https://github.com/CUUATS/bikemoves-gl-style#readme",
+  "dependencies": {
+    "fontmachine": "^0.1.2",
+    "spritezero-cli": "^1.2.0"
+  }
+}
