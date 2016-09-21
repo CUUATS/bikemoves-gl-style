@@ -2964,7 +2964,7 @@
                 "icon-image": "bicycle-15",
                 "text-font": [
                     "Open Sans Semibold",
-                    "Arial Unicode MS Bold"
+                    "Noto Sans Bold"
                 ],
                 "text-field": "{name}",
                 "text-max-width": 9,
@@ -3021,7 +3021,7 @@
             "layout": {
                 "text-font": [
                     "Open Sans Italic",
-                    "Arial Unicode MS Regular"
+                    "Noto Sans Regular"
                 ],
                 "text-field": "{name_en}",
                 "text-max-width": 5,
@@ -3052,7 +3052,7 @@
                 "icon-image": "{maki}-11",
                 "text-font": [
                     "Open Sans Semibold",
-                    "Arial Unicode MS Bold"
+                    "Noto Sans Bold"
                 ],
                 "text-field": "{name_en}",
                 "text-max-width": 9,
@@ -3098,7 +3098,7 @@
                 "icon-image": "{maki}-11",
                 "text-font": [
                     "Open Sans Semibold",
-                    "Arial Unicode MS Bold"
+                    "Noto Sans Bold"
                 ],
                 "text-field": "{name_en}",
                 "text-max-width": 9,
@@ -3144,7 +3144,7 @@
                 "icon-image": "{maki}-11",
                 "text-font": [
                     "Open Sans Semibold",
-                    "Arial Unicode MS Bold"
+                    "Noto Sans Bold"
                 ],
                 "text-field": "{name_en}",
                 "text-max-width": 9,
@@ -3189,7 +3189,7 @@
                 "icon-image": "{maki}-11",
                 "text-font": [
                     "Open Sans Semibold",
-                    "Arial Unicode MS Bold"
+                    "Noto Sans Bold"
                 ],
                 "text-padding": 2,
                 "visibility": "visible",
@@ -3223,7 +3223,7 @@
                 "icon-image": "{maki}-11",
                 "text-font": [
                     "Open Sans Semibold",
-                    "Arial Unicode MS Bold"
+                    "Noto Sans Bold"
                 ],
                 "text-field": "{name_en}",
                 "text-max-width": 9,
@@ -3269,7 +3269,7 @@
                 "icon-image": "{maki}-11",
                 "text-font": [
                     "Open Sans Semibold",
-                    "Arial Unicode MS Bold"
+                    "Noto Sans Bold"
                 ],
                 "text-field": "{name_en}",
                 "text-max-width": 9,
@@ -3316,7 +3316,7 @@
                 "text-field": "{name_en}",
                 "text-font": [
                     "Open Sans Regular",
-                    "Arial Unicode MS Regular"
+                    "Noto Sans Regular"
                 ],
                 "text-size": {
                     "base": 1,
@@ -3358,7 +3358,7 @@
                 "text-field": "{ref}",
                 "text-font": [
                     "Open Sans Semibold",
-                    "Arial Unicode MS Bold"
+                    "Noto Sans Bold"
                 ],
                 "text-size": 11,
                 "icon-image": "motorway_{reflen}",
@@ -3398,7 +3398,7 @@
             "layout": {
                 "text-font": [
                     "Open Sans Bold",
-                    "Arial Unicode MS Bold"
+                    "Noto Sans Bold"
                 ],
                 "text-transform": "uppercase",
                 "text-letter-spacing": 0.1,
@@ -3445,7 +3445,7 @@
             "layout": {
                 "text-font": [
                     "Open Sans Regular",
-                    "Arial Unicode MS Regular"
+                    "Noto Sans Regular"
                 ],
                 "text-field": "{name_en}",
                 "text-max-width": 8,
@@ -3486,7 +3486,7 @@
             "layout": {
                 "text-font": [
                     "Open Sans Regular",
-                    "Arial Unicode MS Regular"
+                    "Noto Sans Regular"
                 ],
                 "text-field": "{name_en}",
                 "text-max-width": 8,
@@ -3527,7 +3527,7 @@
             "layout": {
                 "text-font": [
                     "Open Sans Semibold",
-                    "Arial Unicode MS Bold"
+                    "Noto Sans Bold"
                 ],
                 "text-field": "{name_en}",
                 "text-max-width": 8,
@@ -3568,7 +3568,7 @@
             "layout": {
                 "text-font": [
                     "Open Sans Italic",
-                    "Arial Unicode MS Regular"
+                    "Noto Sans Regular"
                 ],
                 "text-field": "{name_en}",
                 "text-letter-spacing": 0.2,
@@ -3618,7 +3618,7 @@
             "layout": {
                 "text-font": [
                     "Open Sans Italic",
-                    "Arial Unicode MS Regular"
+                    "Noto Sans Regular"
                 ],
                 "text-field": "{name_en}",
                 "text-max-width": 6,
@@ -3669,7 +3669,7 @@
             "layout": {
                 "text-font": [
                     "Open Sans Italic",
-                    "Arial Unicode MS Regular"
+                    "Noto Sans Regular"
                 ],
                 "text-field": "{name_en}",
                 "text-letter-spacing": 0.2,
@@ -3719,7 +3719,7 @@
             "layout": {
                 "text-font": [
                     "Open Sans Italic",
-                    "Arial Unicode MS Regular"
+                    "Noto Sans Regular"
                 ],
                 "text-field": "{name_en}",
                 "text-max-width": 5,
@@ -3770,7 +3770,7 @@
             "layout": {
                 "text-font": [
                     "Open Sans Italic",
-                    "Arial Unicode MS Regular"
+                    "Noto Sans Regular"
                 ],
                 "text-field": "{name_en}",
                 "text-letter-spacing": 0.2,
@@ -3820,7 +3820,7 @@
             "layout": {
                 "text-font": [
                     "Open Sans Italic",
-                    "Arial Unicode MS Regular"
+                    "Noto Sans Regular"
                 ],
                 "text-field": "{name_en}",
                 "text-max-width": 5,
@@ -3871,7 +3871,7 @@
             "layout": {
                 "text-font": [
                     "Open Sans Italic",
-                    "Arial Unicode MS Regular"
+                    "Noto Sans Regular"
                 ],
                 "text-field": "{name_en}",
                 "text-letter-spacing": 0.2,
@@ -3921,7 +3921,7 @@
             "layout": {
                 "text-font": [
                     "Open Sans Italic",
-                    "Arial Unicode MS Regular"
+                    "Noto Sans Regular"
                 ],
                 "text-field": "{name_en}",
                 "text-max-width": 5,
@@ -3977,7 +3977,7 @@
             "layout": {
                 "text-font": [
                     "Open Sans Bold",
-                    "Arial Unicode MS Bold"
+                    "Noto Sans Bold"
                 ],
                 "text-field": "{name_en}",
                 "text-max-width": 6.25,
@@ -4019,7 +4019,7 @@
             "layout": {
                 "text-font": [
                     "Open Sans Bold",
-                    "Arial Unicode MS Bold"
+                    "Noto Sans Bold"
                 ],
                 "text-field": "{name_en}",
                 "text-max-width": 6.25,
@@ -4061,7 +4061,7 @@
             "layout": {
                 "text-font": [
                     "Open Sans Bold",
-                    "Arial Unicode MS Bold"
+                    "Noto Sans Bold"
                 ],
                 "text-field": "{name_en}",
                 "text-max-width": 6.25,
@@ -4103,7 +4103,7 @@
             "layout": {
                 "text-font": [
                     "Open Sans Bold",
-                    "Arial Unicode MS Bold"
+                    "Noto Sans Bold"
                 ],
                 "text-field": "{name_en}",
                 "text-max-width": 6.25,
