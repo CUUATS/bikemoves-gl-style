@@ -1,6 +1,7 @@
 const fontmachine = require('fontmachine'),
   fs = require('fs-extra'),
-  util = require('util');
+  util = require('util'),
+  zlib = require('zlib');
 
 console.log('Converting fonts...');
 fs.readdir('glyphs/_ttf', function(err, files) {
@@ -20,8 +21,11 @@ fs.readdir('glyphs/_ttf', function(err, files) {
             if (err) throw err;
             font.stack.forEach(function(pbf) {
               var pbfPath = fontDir + '/' + pbf.name;
-              fs.writeFile(pbfPath, pbf.data, function(err) {
+              zlib.gunzip(pbf.data, function(err, res) {
                 if (err) throw err;
+                fs.writeFile(pbfPath, res, function(err) {
+                  if (err) throw err;
+                });
               });
             });
           });
