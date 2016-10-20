@@ -20,7 +20,7 @@ const DATA_DIR = '/var/data',
     'a.tileserver.bikemoves.me',
     'b.tileserver.bikemoves.me',
     'c.tileserver.bikemoves.me',
-    'd.tileserver.bikemove.me'
+    'd.tileserver.bikemoves.me'
   ];
 
 var app = express(),
