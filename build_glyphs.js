@@ -1,7 +1,8 @@
 const async = require('async'),
   composite = require('glyph-pbf-composite'),
   fontnik = require('fontnik'),
-  fs = require('fs-extra');
+  fs = require('fs-extra'),
+  request = require('request');
 
 /**
  * Write PBFs for (combined) font stacks used in the styles.
@@ -11,14 +12,29 @@ const async = require('async'),
  * https://github.com/mapbox/fontmachine
  */
 
+ const NOTOSANS_BASE =
+    'http://github.com/googlei18n/noto-fonts/raw/master/unhinted/',
+  OPENSANS_BASE = 'http://github.com/google/fonts/raw/master/apache/opensans/',
+  FONT_URLS = [
+    OPENSANS_BASE + 'OpenSans-Regular.ttf',
+    OPENSANS_BASE + 'OpenSans-Semibold.ttf',
+    OPENSANS_BASE + 'OpenSans-Bold.ttf',
+    OPENSANS_BASE + 'OpenSans-Italic.ttf',
+    NOTOSANS_BASE + 'NotoSans-Regular.ttf',
+    NOTOSANS_BASE + 'NotoSans-Bold.ttf',
+    NOTOSANS_BASE + 'NotoSans-Italic.ttf'
+  ];
+
 var fonts = {},
   stacks = [];
 
-function readFont(fileName, callback) {
-  if (!fileName.endsWith('.ttf')) return callback();
-  fs.readFile('glyphs/_ttf/' + fileName, function(err, fontBuffer) {
-    if (err) return callback(err);
-    fontnik.load(fontBuffer, function(err, faces) {
+function readFont(url, callback) {
+  request.get({
+    url: url,
+    encoding: null
+  }, function(err, response, body) {
+    if (err || response.statusCode != 200) return callback(err);
+    fontnik.load(body, function(err, faces) {
       if (err) return callback(err);
       if (faces.length > 1)
         return done('Mulit-face fonts are not supported.');
@@ -26,17 +42,14 @@ function readFont(fileName, callback) {
         name = metadata.style_name ?
           [metadata.family_name, metadata.style_name].join(' ') :
           metadata.family_name;
-      fonts[name] = fontBuffer;
+      fonts[name] = body;
       return callback();
     });
   });
 }
 
 function readFonts(callback) {
-  fs.readdir('glyphs/_ttf', function(err, files) {
-    if (err) return callback(err);
-    async.each(files, readFont, callback);
-  });
+  async.each(FONT_URLS, readFont, callback);
 }
 
 function readStyle(fileName, callback) {

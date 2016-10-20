@@ -10,7 +10,7 @@ var clone = require('clone'),
  * https://github.com/klokantech/tileserver-gl
  */
 
-const DATA_DIR = __dirname + '/data',
+const DATA_DIR = '/var/data',
   GLYPHS_DIR = __dirname + '/glyphs',
   SPRITES_DIR = __dirname + '/sprites',
   STYLES_DIR = __dirname + '/styles',

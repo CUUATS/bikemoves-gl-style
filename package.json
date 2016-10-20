@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-sprites": "spritezero sprites/sprite sprites/_svg/ && spritezero --retina sprites/sprite@2x sprites/_svg/",
-    "build-glyphs": "node ./build_glyphs.js"
+    "build-glyphs": "node ./build_glyphs.js",
+    "start": "node ./serve.js"
   },
   "repository": {
     "type": "git",
