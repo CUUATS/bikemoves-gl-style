@@ -13,8 +13,8 @@ const async = require('async'),
  */
 
  const NOTOSANS_BASE =
-    'http://github.com/googlei18n/noto-fonts/raw/master/unhinted/',
-  OPENSANS_BASE = 'http://github.com/google/fonts/raw/master/apache/opensans/',
+    'https://github.com/googlei18n/noto-fonts/raw/master/unhinted/',
+  OPENSANS_BASE = 'https://github.com/google/fonts/raw/master/apache/opensans/',
   FONT_URLS = [
     OPENSANS_BASE + 'OpenSans-Regular.ttf',
     OPENSANS_BASE + 'OpenSans-Semibold.ttf',
