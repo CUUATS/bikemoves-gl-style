@@ -74,11 +74,11 @@
         },
         "bikemoves": {
   				  "type": "vector",
-  				  "url": "http://tileserver.bikemoves.me/data/bikemoves.json"
+  				  "url": "http://tileserver.bikemoves.me/tiles/bikemoves.json"
   			}
     },
-    "sprite": "mapbox://sprites/mapbox/bright-v9",
-    "glyphs": "mapbox://fonts/mapbox/{fontstack}/{range}.pbf",
+    "sprite": "http://tileserver.bikemoves.me/sprites/sprite",
+    "glyphs": "http://tileserver.bikemoves.me/glyphs/{fontstack}/{range}.pbf",
     "layers": [
         {
             "id": "background",
