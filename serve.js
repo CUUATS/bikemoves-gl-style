@@ -12,8 +12,17 @@ var clone = require('clone'),
 
 const DATA_DIR = '/var/data',
   GLYPHS_DIR = __dirname + '/glyphs',
+  GLYPHS_OPTIONS = {
+    maxAge: '10 days'
+  },
   SPRITES_DIR = __dirname + '/sprites',
+  SPRITES_OPTIONS = {
+    maxAge: '1 day'
+  },
   STYLES_DIR = __dirname + '/styles',
+  STYLES_OPTIONS = {
+    maxAge: '1 day'
+  },
   TILE_PATTERN = '/tiles/:id/:z(\\d+)/:x(\\d+)/:y(\\d+).:format([\\w]+)',
   TILEJSON_PATTERN = '/tiles/:id.json',
   TILE_DOMAINS = [
@@ -21,7 +30,8 @@ const DATA_DIR = '/var/data',
     'b.tileserver.bikemoves.me',
     'c.tileserver.bikemoves.me',
     'd.tileserver.bikemoves.me'
-  ];
+  ],
+  ONE_DAY = 'max-age=86400';
 
 var app = express(),
   tilestores = {},
@@ -49,9 +59,9 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.use('/glyphs', express.static(GLYPHS_DIR));
-app.use('/sprites', express.static(SPRITES_DIR));
-app.use('/styles', express.static(STYLES_DIR));
+app.use('/glyphs', express.static(GLYPHS_DIR, GLYPHS_OPTIONS));
+app.use('/sprites', express.static(SPRITES_DIR, SPRITES_OPTIONS));
+app.use('/styles', express.static(STYLES_DIR, STYLES_OPTIONS));
 app.get(TILE_PATTERN, function(req, res, next) {
   var id = req.params.id,
     format = req.params.format,
@@ -80,6 +90,7 @@ app.get(TILE_PATTERN, function(req, res, next) {
     if (metadata.format === 'pbf') {
       headers['Content-Type'] = 'application/x-protobuf';
       headers['Content-Encoding'] = 'gzip';
+      headers['Cache-Control'] = ONE_DAY;
     }
     delete headers['ETag'];
     res.set(headers);
@@ -102,6 +113,7 @@ app.get(TILEJSON_PATTERN, function(req, res, next) {
       '/{z}/{x}/{y}.' + meta.format);
   });
 
+  res.set('Cache-Control', ONE_DAY);
   return res.status(200).send(meta);
 });
 
