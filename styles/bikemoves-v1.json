@@ -77,8 +77,8 @@
   				  "url": "http://tileserver.bikemoves.me/tiles/bikemoves.json"
   			}
     },
-    "sprite": "http://tileserver.bikemoves.me/sprites/sprite",
-    "glyphs": "http://tileserver.bikemoves.me/glyphs/{fontstack}/{range}.pbf",
+    "sprite": "https://tileserver.bikemoves.me/sprites/sprite",
+    "glyphs": "https://tileserver.bikemoves.me/glyphs/{fontstack}/{range}.pbf",
     "layers": [
         {
             "id": "background",

@@ -108,8 +108,9 @@ app.get(TILEJSON_PATTERN, function(req, res, next) {
 
   var meta = clone(metadata[id]);
   meta.tiles = [];
+
   TILE_DOMAINS.forEach(function(domain) {
-    meta.tiles.push(req.protocol + '://' + domain + '/tiles/' + meta.id +
+    meta.tiles.push('https://' + domain + '/tiles/' + meta.id +
       '/{z}/{x}/{y}.' + meta.format);
   });
 
