@@ -74,7 +74,7 @@
         },
         "bikemoves": {
   				  "type": "vector",
-  				  "url": "http://tileserver.bikemoves.me/tiles/bikemoves.json"
+  				  "url": "https://tileserver.bikemoves.me/tiles/bikemoves.json"
   			}
     },
     "sprite": "https://tileserver.bikemoves.me/sprites/sprite",
