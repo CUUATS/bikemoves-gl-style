@@ -2934,15 +2934,17 @@
               "line-color": {
                   "property": "path_type",
                   "type": "categorical",
+                  "default": "#999999",
                   "stops": [
+                      ["Bike Lanes", "#66b3ff"],
+                      ["Bike Path", "#ff8080"],
                       ["Bike Route", "#ffff66"],
-                      ["Shared Lane Markings (sharrows)", "#ffff66"],
-                      ["Bike Lanes (on-street)", "#ff8080"],
-                      ["Bike Path", "#66b3ff"],
-                      ["UIUC Bike Path", "#66b3ff"],
-                      ["Divided Shared-Use Path", "#66b3ff"],
-                      ["Shared-Use Path (sidepath)", "#66b3ff"],
-                      ["Shared-Use Path (off-street)", "#66b3ff"]
+                      ["Nature Trail", "#ff8080"],
+                      ["Shared Bike/Parking Lanes", "#ffff66"],
+                      ["Shared-Use Path", "#ff8080"],
+                      ["Sharrows", "#f266ff"],
+                      ["Sidewalk", "#ff8080"],
+                      ["Trail Closed Indefinitely", "#999999"]
                   ]
               },
               "line-width": {
