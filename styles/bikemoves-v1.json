@@ -2965,7 +2965,7 @@
             "layout": {
                 "icon-image": "bicycle-15",
                 "text-font": [
-                    "Open Sans Semibold",
+                    "Open Sans SemiBold",
                     "Noto Sans Bold"
                 ],
                 "text-field": "{name}",
@@ -3053,7 +3053,7 @@
             "layout": {
                 "icon-image": "{maki}-11",
                 "text-font": [
-                    "Open Sans Semibold",
+                    "Open Sans SemiBold",
                     "Noto Sans Bold"
                 ],
                 "text-field": "{name_en}",
@@ -3099,7 +3099,7 @@
             "layout": {
                 "icon-image": "{maki}-11",
                 "text-font": [
-                    "Open Sans Semibold",
+                    "Open Sans SemiBold",
                     "Noto Sans Bold"
                 ],
                 "text-field": "{name_en}",
@@ -3145,7 +3145,7 @@
             "layout": {
                 "icon-image": "{maki}-11",
                 "text-font": [
-                    "Open Sans Semibold",
+                    "Open Sans SemiBold",
                     "Noto Sans Bold"
                 ],
                 "text-field": "{name_en}",
@@ -3190,7 +3190,7 @@
                 "text-size": 12,
                 "icon-image": "{maki}-11",
                 "text-font": [
-                    "Open Sans Semibold",
+                    "Open Sans SemiBold",
                     "Noto Sans Bold"
                 ],
                 "text-padding": 2,
@@ -3224,7 +3224,7 @@
             "layout": {
                 "icon-image": "{maki}-11",
                 "text-font": [
-                    "Open Sans Semibold",
+                    "Open Sans SemiBold",
                     "Noto Sans Bold"
                 ],
                 "text-field": "{name_en}",
@@ -3270,7 +3270,7 @@
             "layout": {
                 "icon-image": "{maki}-11",
                 "text-font": [
-                    "Open Sans Semibold",
+                    "Open Sans SemiBold",
                     "Noto Sans Bold"
                 ],
                 "text-field": "{name_en}",
@@ -3359,7 +3359,7 @@
             "layout": {
                 "text-field": "{ref}",
                 "text-font": [
-                    "Open Sans Semibold",
+                    "Open Sans SemiBold",
                     "Noto Sans Bold"
                 ],
                 "text-size": 11,
@@ -3528,7 +3528,7 @@
             "interactive": true,
             "layout": {
                 "text-font": [
-                    "Open Sans Semibold",
+                    "Open Sans SemiBold",
                     "Noto Sans Bold"
                 ],
                 "text-field": "{name_en}",

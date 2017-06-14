@@ -17,7 +17,7 @@ const async = require('async'),
   OPENSANS_BASE = 'https://github.com/google/fonts/raw/master/apache/opensans/',
   FONT_URLS = [
     OPENSANS_BASE + 'OpenSans-Regular.ttf',
-    OPENSANS_BASE + 'OpenSans-Semibold.ttf',
+    OPENSANS_BASE + 'OpenSans-SemiBold.ttf',
     OPENSANS_BASE + 'OpenSans-Bold.ttf',
     OPENSANS_BASE + 'OpenSans-Italic.ttf',
     NOTOSANS_BASE + 'NotoSans-Regular.ttf',
