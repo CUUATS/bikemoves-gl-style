@@ -83,7 +83,7 @@ app.get(TILE_PATTERN, function(req, res, next) {
 
   store.getTile(z, x, y, function(err, data, headers) {
     if (err) {
-      var code = (/does not exist/.test(err.message)) ? 404 : 500;
+      var code = (/does not exist/.test(err.message)) ? 204 : 500;
       return res.status(code).send(err.message);
     }
 
@@ -96,7 +96,7 @@ app.get(TILE_PATTERN, function(req, res, next) {
     res.set(headers);
 
     return (data === null) ?
-      res.status(404).send('Not found') : res.status(200).send(data);
+      res.status(204).send('No tile data') : res.status(200).send(data);
   });
 });
 
