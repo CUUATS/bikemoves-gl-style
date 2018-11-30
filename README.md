@@ -1,4 +1,2 @@
-# BikeMoves Illinois Mapbox GL Style
-The map style used in the [BikeMoves Illinois](http://bikemoves.me/)
-mobile app. Based on Mapbox's
-[bright-v9](https://github.com/mapbox/mapbox-gl-styles).
+# We've moved!
+This repository is now [hosted on GitLab](https://gitlab.com/ccrpc/bikemoves-gl-style).
